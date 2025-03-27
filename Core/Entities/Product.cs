@@ -1,12 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Backend.Core.Entities
+namespace Backend.Core.Entities;
+public class Product
 {
-    public class Product
-    {
-        
-    }
+    public Guid Guid { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
+    public decimal Price { get; set; }
+    public int Stock { get; set; }
+    public string Category { get; set; } = string.Empty;
+    public string ImageUrl { get; set; } = string.Empty;
 }
